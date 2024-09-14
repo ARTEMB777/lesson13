@@ -1,0 +1,43 @@
+svg{
+    border: 1px solid black;
+}
+
+svg > *{
+    stroke-width: 5px;
+}
+
+.square{
+    fill: rgb(21, 136, 6);
+    stroke: rgb(0, 84, 21);
+}
+
+.rectangle{
+    fill: rgb(6, 30, 136);
+    stroke: rgb(9, 1, 84);
+}
+
+.circle{
+    fill: rgb(136, 6, 6);
+    stroke: rgb(96, 0, 0);
+}
+
+.circle--animation{
+    animation: colorChange 2s alternate infinite;
+}
+
+@keyframes colorChange {
+    0% {
+        fill: lightcoral;
+        stroke: darkred;
+    }
+    100% {
+        fill: yellow;
+        stroke: orange;
+    }
+}
+
+.ellipse{
+    fill: rgb(136, 6, 71);
+    stroke: rgb(85, 0, 49);
+}
+
